@@ -1,0 +1,14 @@
+{
+  "name": "11ty-decapcms-fishes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "dev": "decap-server",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "decap-server": "^3.0.2"
+  }
+}

@@ -1,0 +1,39 @@
+<div class="title">
+    <h1>Fish list</h1>
+    <p>List of fish with descriptions.</p>
+</div>
+<div class="aquarium">
+    {% for fish in fishlist | fishByAquarium %}
+        <div class="fish-wrapper">
+            <button class="fish-btn collapsible">
+                {{ fish.data.name }} {{ fish.data.aquarium }}
+            </button>
+            <div class="fish-content collapsible-content">
+                <img src="{{ fish.data.image | url }}" alt="{{ fish.data.image }}" />
+                <div>
+                    <h2>{{ fish.data.title }}</h2>
+                    <p>{{ fish.content | safe }}</p>
+                    <a href="{{ fish.url | url }}">More...</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{# <div class="aquarium">
+    {% for fish in fishlist | fishByAquarium %}
+        <div class="fish-wrapper">
+            <input class="fish-btn" id="{{ fish.data.name | replace(' ', '-') }}" type="checkbox" />
+            <label class="fish-btn-lable" for="{{ fish.data.name | replace(' ', '-') }}">
+                {{ fish.data.name }} {{ fish.data.aquarium }}
+            </label>
+            <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div> #}
