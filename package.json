@@ -1,10 +1,11 @@
 {
-  "name": "11ty-decapcms-fishes",
+  "name": "fish-guide-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "mrnto & soulajaha",
+  "license": "ISC",
   "scripts": {
-    "start": "eleventy --serve",
-    "dev": "decap-server",
+    "serve": "eleventy --serve",
+    "cms": "decap-server",
     "build": "eleventy"
   },
   "devDependencies": {

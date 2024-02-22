@@ -1,45 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --text: #222222;
-    --bg-gradient-1: #c8efd6;
-    --bg-gradient-2: #f5bdd6;
-    --bg-gradient-3: #aac8e9;
     --logo-gradient-1: #ec0d78;
     --logo-gradient-2: #ff2b40;
     --logo-gradient-3: #f75735;
     --logo-gradient-4: #fe880e;
-    --shadow-cute-1: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-cute-2: 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-    --shadow-cute-3: 2px 0 4px -2px rgba(0, 0, 0, 0.1);
+}
 
-    --cool: #FFF8F2;
-
-    --primary: #EEF5FF;
-    --secondary: #B4D4FF;
-    --tertiary: #86B6F6;
-    --quaternary: #176B87;
-
-    --primary: #227093;
-    --secondary: #ff5252;
-    --background: #eee;
-    --highlight: #ffda79;
-    /* Theme color */
-    --theme: var(--primary);
+:root,
+[data-theme="light"] {
+    --bg: #eee;
+    --bg-gradient-1: #c8efd6;
+    --bg-gradient-2: #f5bdd6;
+    --bg-gradient-3: #aac8e9;
+    --text: #222;
+    --shadow-1: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-2: 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-3: 4px 0 6px 2px rgba(0, 0, 0, 0.1);
+}
+[data-theme="dark"] {
+    --bg: #222;
+    --bg-gradient-1: #232526;
+    --bg-gradient-2: #323436;
+    --bg-gradient-3: #414345;
+    --text: #eee;
+    --shadow-1: none;
+    --shadow-2: none;
+    --shadow-3: none;
 }
 
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body {
+    color: var(--text);
     background: var(--bg-gradient-3);
     background: linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 50%, var(--bg-gradient-3) 100%);
     background: -moz-linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 50%, var(--bg-gradient-3) 100%);
