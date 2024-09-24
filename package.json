@@ -1,15 +1,15 @@
 {
-  "name": "fish-guide-app",
-  "version": "1.0.0",
-  "author": "mrnto & soulajaha",
-  "license": "ISC",
-  "scripts": {
-    "serve": "eleventy --serve",
-    "cms": "decap-server",
-    "build": "eleventy"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "decap-server": "^3.0.2"
-  }
+    "name": "fish-guide-app",
+    "version": "1.0.0",
+    "author": "mrnto & soulajaha",
+    "license": "MIT",
+    "scripts": {
+        "serve": "eleventy --serve",
+        "cms": "decap-server",
+        "build": "eleventy"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "decap-server": "^3.0.2"
+    }
 }

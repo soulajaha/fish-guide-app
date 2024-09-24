@@ -9,17 +9,25 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    {% include "layouts/header.njk" %}  
-    <div id="main-content-container">
-        <main>
-            {{ content | safe }}
-        </main>
+    {% include "layouts/header.njk" %}
+    <div class="content-wrapper">
+        <div class="fish-search">
+            <div class="fish-search-inner">
+                <form name="fish-search-form" class="fish-search-form">
+                    <input type="text" id="keyword-search-text" class="fish-search-text js-fish-search-value" placeholder="Search...">
+                    <input type="text" name="dummy" style="display: none;">
+                    <button type="button" class="fish-search-button js-fish-search-button">GO</button>
+                </form>
+            </div>
+        </div>
+        {{ content | safe }}
     </div>
     {% include "layouts/footer.njk" %}
 
+    {# <script src="/assets/js/accordion.js"></script> #}
+    <script src="/assets/js/search.js"></script>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/theme-toggle.js"></script>
-    <script src="/assets/js/accordion.js"></script>
     <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 </html>
