@@ -3,7 +3,7 @@ name: Ротала макрандра (пучок)
 latin: Rotala macrandra var. mini
 image: /assets/images/uploads/rotala-macrandra-var-mini.jpg
 aquarium:
-  - 2.1
+  - 4.2
 soldout: false
 ---
-5-10 веток
+10-15 веток
